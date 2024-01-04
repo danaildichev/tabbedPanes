@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+	
+		<title>Code Snippet</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		
+		<style>
+		
+		/* tabs - active */
+		.tab-active { color: hsl(262 80% 90%) }
+		.tab-bordered.tab-active:not(.tab-disabled):not([disabled]) { border-color: hsl(262 80% 90%) }
+
+		/* panes - display */
+		.pane { display: none; }
+		.pane-active { display: block; }
+		
+		/* classes for fading */
+		.fade { transition: opacity; transition-duration: 0.3s; }
+		.faded-in { opacity: 100%; }
+		.faded-out { opacity: 0%; }
+		
+		</style>
+	
+	</head>
+  
+	<body>
+	
+		<div class="text-2xl">
+			<p>This demo uses Tailwind and Daisy UI</p>
+		</div>
+		
+		<!-- main content -->
+    <main>
+
+
+        <!------------------------------>
+        <!-- section: generic section -->
+        <section class="py-6">
+
+            <div class="container mx-auto px-6 sm:px-0 bg-base-200 rounded-2xl">
+
+                <!-------------------->
+                <!-- section header -->
+                <header class="p-6 pb-3">
+                    <div class="pb-3">
+                        <h2 class="text-4xl mr-4 pl-6 block md:inline font-bold text-primary">
+                            Tabbed Panes
+                        </h2>
+                        
+                    </div>
+                    <div class="glass h-3 shadow-none rounded-b-2xl"></div>
+                </header>
+                <!-- end section header -->
+                <!------------------------>
+
+                <!--------------------->
+                <!-- section content -->
+                <div class="p-6 pt-3">
+
+                    <div class="container mx-auto px-6 sm:px-0">
+
+                
+                <div role="tablist" tabindex="0" id="componentTabbedPanes" class="tabbedPanes">
+    <div class="tabs  mb-6"> <a role="tab" id="genericNavTab10" class="tab tab-active tab-bordered" data-pane-id="genericPane10" aria-selected="true" aria-controls="genericPane10" tabindex="0">
+    Account
+</a>
+
+
+                        
+                        <a role="tab" id="genericNavTab11" class="tab  tab-bordered" data-pane-id="genericPane11" aria-selected="false" aria-controls="genericPane11" tabindex="-1">
+    Settings
+</a>
+
+
+                        
+                        <a role="tab" id="genericNavTab12" class="tab  tab-bordered" data-pane-id="genericPane12" aria-selected="false" aria-controls="genericPane12" tabindex="-1">
+    Messages
+</a> </div>
+</div>
+
+
+<div class="panes">
+    <div id="genericPane10" class="pane fade faded-in pane-active " role="tabpanel" tabindex="0" aria-labelledby="genericNavTab10">
+
+    
+    <p class="text-xl mb-4">Account</p>
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium blanditiis dolore doloribus ducimus, fugit incidunt laborum modi molestias mollitia, nam nesciunt quaerat quisquam soluta voluptas? Consequuntur dolore eius quibusdam!</span><span>Beatae blanditiis, commodi culpa debitis, deserunt expedita illum inventore ipsa ipsam labore laboriosam maiores neque nesciunt numquam officiis perspiciatis quae quia quisquam reprehenderit rerum tempore vel velit voluptas! Similique, vitae.</span><span>At autem, consectetur dolores est libero, molestias nulla quisquam repudiandae rerum sint tempore velit. Culpa delectus exercitationem in ipsa minus obcaecati officiis quas repellat tempora! Est nulla quae quos soluta.</span><span>Accusantium culpa eos neque nobis reiciendis. Consequatur inventore iure placeat reprehenderit sit, velit voluptates. Assumenda doloremque, exercitationem, magnam molestias, nam nostrum quod reiciendis saepe sed sit temporibus velit vero voluptas?</span><span>Dolorum eligendi exercitationem iusto magni nihil officiis perferendis praesentium veritatis vitae? Deleniti dolor, ducimus est ex excepturi facere fuga itaque laborum mollitia porro praesentium quasi quis quod sunt suscipit velit!</span>
+                            </p>
+
+</div>
+
+                        
+
+                        
+                        <div id="genericPane11" class="pane fade faded-out " role="tabpanel" tabindex="0" aria-labelledby="genericNavTab11">
+
+    
+    <p class="text-xl mb-4">Settings</p>
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur commodi, dolores ea ipsum iste minus molestiae odit omnis quaerat repellat repudiandae sit suscipit temporibus ullam ut voluptates! Vitae.</span><span>Doloribus harum illum itaque numquam. Accusamus accusantium blanditiis consequatur, deleniti eveniet fugiat iure iusto labore nihil, nostrum odit praesentium quis quos saepe totam. Architecto dolore labore mollitia pariatur quasi veritatis?</span><span>Aut cumque deserunt dolore hic. Aperiam asperiores blanditiis commodi delectus eum explicabo facere, fuga fugiat in incidunt maxime minima modi nostrum optio placeat porro, provident quisquam quos sed veritatis. Fugit.</span><span>Accusantium ad, architecto asperiores at beatae, blanditiis, corporis dicta earum expedita inventore iste itaque modi numquam perspiciatis possimus quia quis reiciendis sed sint temporibus. Atque aut dolorum saepe soluta voluptas.</span><span>Alias amet asperiores atque debitis deserunt dolores doloribus ea eos inventore labore laborum magnam natus porro quasi, quisquam rem reprehenderit sit suscipit tempora tenetur voluptate voluptatibus voluptatum! Accusantium, deserunt, reiciendis.</span>
+                            </p>
+
+</div>
+
+                        
+
+                        
+                        <div id="genericPane12" class="pane fade faded-out " role="tabpanel" tabindex="0" aria-labelledby="genericNavTab12">
+
+    
+    <p class="text-xl mb-4">Messages</p>
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquid deserunt dolor omnis porro quam quo ullam? At ducimus eligendi error hic magnam minus recusandae repudiandae rerum temporibus velit.</span><span>A aperiam, autem blanditiis consequuntur debitis delectus deleniti dignissimos dolorem ducimus enim excepturi itaque necessitatibus nesciunt optio pariatur praesentium reprehenderit repudiandae saepe veniam, voluptatum. Asperiores distinctio esse id magni necessitatibus!</span><span>Accusamus ad consequatur cum cupiditate delectus deleniti doloremque eos et expedita facilis illum laboriosam libero minima modi nobis officiis praesentium quas quibusdam quidem reprehenderit saepe velit veniam, vitae voluptate voluptatibus?</span><span>Autem eos expedita hic incidunt minus nemo nesciunt omnis velit. Culpa error hic illum nihil sint. Beatae blanditiis cumque, deserunt eius eos error maiores nulla perferendis quia temporibus, velit veniam?</span><span>Ab assumenda aut doloremque ducimus ex in libero modi mollitia necessitatibus nesciunt nostrum odio quas quasi quibusdam quisquam quod quos reiciendis, repellat sit suscipit totam veniam vero. Excepturi, expedita, sint?</span>
+                            </p>
+
+</div>
+</div>
+
+
+                
+
+            </div>
+					
+                </div>
+                <!-- end section content -->
+                <!------------------------->
+
+            </div>
+
+        </section>
+        <!-- endsection: generic section -->
+        <!--------------------------------->
+
+
+    </main>
+    <!-- end main content -->
+
+	
+	</body>
+	
+	<script>
+	
+	/*
+	* fn: handle tabbed panes
+	*
+	*  */
+	function handleTabbedPanes()
+	{
+		// get all tabbed panes
+		const tabbedPanes = document.getElementsByClassName('tabbedPanes');
+
+		// for all tabs and panes in all tabbed panes
+		for (const allTabbedPanes of tabbedPanes)
+		{
+			// get each HTMLCollection of tabs
+			const allTabs = allTabbedPanes.children[0];     // a group of tabs
+			const allTabsChildren = allTabs.children; // each tab in that group
+
+			// for each tab in the current group
+			for (let i = 0; i < allTabsChildren.length; i++)
+			{
+				// assign a click event
+				allTabsChildren[i].addEventListener('click', (e) =>
+				{
+					// using event target (the tab that was just clicked)
+					// get that tab as an html element
+					const tabTarget = e.target;
+					const tab = document.getElementById(tabTarget.id);
+
+					// get the corresponding pane id from the tab that was clicked
+					// get the corresponding pane as an html element
+					const paneId = tab.dataset.paneId;
+					const pane = document.getElementById(paneId);
+
+					// get the parent node of the current tab group
+					const tabParent = tab.parentNode;
+
+					// get the current tab
+					// remove active class from the current tab
+					// update aria-selected attribute and tabindex
+					let currentTab = tabParent.querySelector('.tab-active');
+					currentTab.classList.remove('tab-active');
+					currentTab.setAttribute('aria-selected', 'false');
+					currentTab.setAttribute('tabindex', '-1');
+
+					// add active class to the tab that was clicked
+					// update aria-selected attribute and tabindex
+					tab.classList.add('tab-active');
+					tab.setAttribute('aria-selected', 'true');
+					tab.setAttribute('tabindex', '0');
+
+					// get the current pane
+					// update the active class for current and corresponding panes
+					// and handle fade animation
+					let currentPane = document.getElementById(currentTab.dataset.paneId);
+					currentPane.classList.replace('faded-in', 'faded-out');
+					setTimeout(() =>
+					{
+						currentPane.classList.remove('pane-active');
+						pane.classList.add('pane-active');
+
+						setTimeout(() =>
+						{
+							pane.classList.replace('faded-out', 'faded-in');
+						}, 100);
+
+					}, 300);
+
+				})
+			}
+		}
+
+	}
+	
+	
+	document.addEventListener("DOMContentLoaded", () => {
+
+		// handle tabbed panes
+		handleTabbedPanes();
+
+	});
+
+	
+	</script>
+	
+</html>
