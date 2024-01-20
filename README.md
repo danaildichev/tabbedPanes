@@ -6,6 +6,16 @@ Nav tabs with content panels that fade in and out. Handles keyboard input with t
 
 The example file, `index.html` was built with Tailwind, Daisy UI, and some custom CSS.
 
+## Table of Contents
+
+- [Live Demo](#live-demo)
+- [Install](#install)
+- [Usage](#usage)
+- [API](#api)
+- [Issues](#issues)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Live Demo
 
 [https://danaildichev.net/portfolio/code-samples/tabbed-panes](https://danaildichev.net/portfolio/code-samples/tabbed-panes)
@@ -18,7 +28,7 @@ The example file, `index.html` was built with Tailwind, Daisy UI, and some custo
 
 ### HTML and CSS
 
-```
+```html
 <style>
 		
 /* tabs - active */
@@ -93,7 +103,7 @@ The example file, `index.html` was built with Tailwind, Daisy UI, and some custo
 
 ### Create an instance of the `TabbedPanesHandler` class
 
-```
+```html
 <script src="path/to/TabbedPanesHandler.js"></script>
 <script>
 
@@ -116,8 +126,6 @@ Open an issue or hit me up.
 ## Contributing
 
 PRs accepted.
-
-## To Do
 
 ## License
 
